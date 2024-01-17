@@ -1,0 +1,19 @@
+@for(personaje of data; track $index){
+    <section class="todo">
+        <article class="contenedor">
+            <div class="imgbox">
+                <img [src]="personaje.image">
+            </div>
+            <div class="details">
+                <h2>{{personaje.name}}</h2>
+                <h2>{{personaje.id}}</h2>
+    
+            </div>
+            <section>
+                <p>{{personaje.gender}}</p>
+                <p>{{personaje.species}}</p>
+            </section>
+        </article>
+    </section>
+}
+
